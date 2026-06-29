@@ -31,7 +31,7 @@ Autoencoder adalah jaringan saraf tiruan yang terdiri atas dua komponen utama, y
 
 \section{Proses Training di Kaggle}
 
-Training dilakukan menggunakan Kaggle Notebook dengan dataset Fashion-MNIST yang terdiri atas 60.000 citra pelatihan dan 10.000 citra pengujian berukuran 28×28 piksel grayscale. Model dilatih menggunakan loss function Mean Squared Error (MSE) dan optimizer Adam dengan learning rate 0,001. Untuk mempelajari pengaruh ukuran latent space terhadap kualitas rekonstruksi, dilakukan eksperimen pada tiga variasi latent dimension, yaitu 2, 8, dan 32. Masing-masing model dilatih selama [X] epoch hingga nilai loss konvergen. Selama proses training, grafik loss dicatat dan divisualisasikan untuk memantau konvergensi. Setelah training selesai, model disimpan dalam format .pth dan diunduh dari Kaggle untuk digunakan pada proses inferensi di lingkungan lokal.
+Training dilakukan menggunakan Kaggle Notebook dengan dataset Fashion-MNIST yang terdiri atas 60.000 citra pelatihan dan 10.000 citra pengujian berukuran 28×28 piksel grayscale. Model dilatih menggunakan loss function Mean Squared Error (MSE) dan optimizer Adam dengan learning rate 0,001. Untuk mempelajari pengaruh ukuran latent space terhadap kualitas rekonstruksi, dilakukan eksperimen pada tiga variasi latent dimension, yaitu 2, 8, dan 32. Masing-masing model dilatih selama 20 epoch hingga nilai loss konvergen. Selama proses training, grafik loss dicatat dan divisualisasikan untuk memantau konvergensi. Setelah training selesai, model disimpan dalam format .pth dan diunduh dari Kaggle untuk digunakan pada proses inferensi di lingkungan lokal.
 
 \section{Hasil Eksperimen}
 
@@ -64,9 +64,9 @@ Gambar 2 menampilkan perbandingan citra asli dengan hasil rekonstruksi untuk set
 \toprule
 Latent Dim & Loss Akhir & Kualitas Visual & Catatan \\
 \midrule
-2 & [0.0XXX] & [cukup buram, detail tepi hilang] & [representasi terlalu terbatas] \\
-8 & [0.0XXX] & [cukup jelas, sedikit blur] & [keseimbangan kompresi dan detail] \\
-32 & [0.0XXX] & [lebih tajam, detail terjaga] & [rekonstruksi paling baik] \\
+2 & 0,0325 & Buram, tepi tidak jelas, bentuk sulit dikenali & Kapasitas representasi sangat terbatas \\
+8 & 0,0151 & Cukup jelas, detail tepi mulai terbentuk & Keseimbangan antara kompresi dan detail \\
+32 & 0,0081 & Paling tajam, detail hampir mendekati asli & Rekonstruksi terbaik \\
 \bottomrule
 \end{tabular}
 \end{table}
