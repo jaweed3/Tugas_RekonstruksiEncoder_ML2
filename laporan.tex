@@ -155,4 +155,22 @@ Refleksi kritis terhadap hasil eksperimen menunjukkan bahwa autoencoder tidak se
 
 Berdasarkan hasil eksperimen, dapat disimpulkan bahwa autoencoder mampu merekonstruksi citra Fashion-MNIST dengan kualitas yang bervariasi tergantung ukuran latent dimension. Latent dimension yang lebih besar menghasilkan rekonstruksi yang lebih baik karena kapasitas representasi yang lebih besar, namun meningkatkan risiko overfitting dan penggunaan memori yang lebih tinggi. Model autoencoder yang telah dilatih dapat digunakan kembali melalui terminal dengan cara menyimpan dan memuat ulang parameter model, asalkan arsitektur yang digunakan identik. Proses rekonstruksi melalui decoder secara mandiri membuktikan bahwa decoder telah mempelajari pemetaan dari latent space ke ruang citra. Autoencoder tidak memahami gambar secara semantik, melainkan mempelajari pola statistik dari data pelatihan untuk meminimalkan kesalahan rekonstruksi.
 
+\section*{Lampiran}
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.75\textwidth]{results/ss_training1.png}
+\caption{Screenshot proses training di Kaggle (1)}
+\end{figure}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.75\textwidth]{results/ss_training2.png}
+\caption{Screenshot proses training di Kaggle (2)}
+\end{figure}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.75\textwidth]{results/ss_training3.png}
+\caption{Screenshot proses training di Kaggle (3)}
+\end{figure}
+
 \end{document}
