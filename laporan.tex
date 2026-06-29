@@ -9,14 +9,14 @@
 \usepackage{caption}
 
 \geometry{top=1.8cm, bottom=1.8cm, left=2cm, right=2cm}
-\setstretch{0.95}
-\parskip=3pt
+\setstretch{0.88}
+\parskip=2pt
 \parindent=0pt
 \small
 
 \title{\textbf{Laporan Tugas Autoencoder}\\[4pt]
 \large Training di Kaggle dan Rekonstruksi Citra Fashion-MNIST melalui Decoder}
-\author{Nama: [Nama Lengkap] \\ NIM: [NIM]}
+\author{Nama: Fatih Jawwad Al Mumtaz \\ NIM: 452024611047}
 \date{}
 
 \begin{document}
@@ -41,8 +41,8 @@ Gambar 1 menunjukkan perbandingan training loss dari ketiga variasi latent dimen
 
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=0.85\textwidth]{results/training_loss_comparison.png}
-\caption{Perbandingan training loss antar latent dimension}
+\includegraphics[width=0.75\textwidth]{results/training_loss_comparison.png}
+\caption{Perbandingan training loss antar latent dimension}\vspace{-8pt}
 \end{figure}
 
 \subsection{Perbandingan Hasil Rekonstruksi}
@@ -51,7 +51,7 @@ Gambar 2 menampilkan perbandingan citra asli dengan hasil rekonstruksi untuk set
 
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=0.9\textwidth]{results/reconstruction_comparison.png}
+\includegraphics[width=0.82\textwidth]{results/reconstruction_comparison.png}
 \caption{Perbandingan rekonstruksi antar latent dimension}
 \end{figure}
 
@@ -104,7 +104,11 @@ python generate_from_decoder.py --decoder models/decoder_fashion_mnist_dim8.pth
 
 \subsection{Screenshot Terminal}
 
-[Gambar screenshot terminal akan ditempatkan di sini setelah proses training dan pengujian selesai.]
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.75\textwidth]{results/terminal_screenshot.png}
+\caption{Screenshot proses rekonstruksi melalui terminal}
+\end{figure}
 
 \section{Analisis}
 
