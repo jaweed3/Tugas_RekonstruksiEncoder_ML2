@@ -1,7 +1,7 @@
 # Tugas Autoencoder Fashion-MNIST
 
-**Nama:** [Nama]
-**NIM:** [NIM]
+**Nama:** Fatih Jawwad Al Mumtaz
+**NIM:** 452024611047
 
 ## Versi Python dan Library
 
